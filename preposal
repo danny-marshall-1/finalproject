@@ -1,0 +1,21 @@
+# Preproposal
+
+## What idea(s) do you have for your final project?
+
+# we are interested in designing an app that people can use to track their workouts in the gym. 
+# ideally there would be some pre-made workout routine templates that users can choose from, or they can design their own.
+# there should also be a dictionary of exercises for each muscle group. Users can again add their own exercises if they are not found in the dictionary.
+# the app should allow the user to input the weight, reps, and sets, and effort level for a given exercise in a workout.
+# it should remind the user of their previous performance and make adjustments if necessary.
+  # for instance if they fall below the designated rep range, it should prompt the user to drop the weight by a certain amount.
+  # the app should know whether or not to add weight to an exercise the following week, keep pushing for more reps, or decrease weight.
+# once the workout is complete it should calculate the volume total for each exercise (weight x sets x reps) and compare to last week
+# other possibities include calorie/macro counting and weight tracking.
+
+## If you plan to collaborate with one or two classmates, what are their names?
+
+# Jessie Lam, Jaydin Farro
+
+## Do you have any questions of your own?
+
+# we would appreciate some imput about which aspects of this project are realistic, which might not be realistic, and the kinds of things we could add to make it more comprehensive.
