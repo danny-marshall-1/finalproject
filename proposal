@@ -1,0 +1,48 @@
+# Proposal
+
+## What will (likely) be the title of your project?
+
+# Jacked & Stacked
+
+## In just a sentence or two, summarize your project. (E.g., "A website that lets you buy and sell stocks.")
+
+# a mobile app that allows users to track their workouts in the gym.
+
+## In a paragraph or more, detail your project. What will your software do? What features will it have? How will it be executed?
+
+# we are interested in designing an app that people can use to track their workouts in the gym. 
+# ideally there would be some pre-made workout routine templates that users can choose from, or they can design their own.
+# there should also be a dictionary of exercises for each muscle group. Users can again add their own exercises if they are not found in the dictionary.
+# the app should allow the user to input the weight, reps, and sets, and effort level for a given exercise in a workout.
+# it should remind the user of their previous performance and adjust if necessary.
+  # for instance if they fall below the designated rep range, it should prompt the user to drop the weight by a certain amount.
+  # the app should know whether to add weight to an exercise the following week, keep pushing for more reps, or decrease weight.
+# once the workout is complete it should calculate the volume total for each exercise (weight x sets x reps) and compare to last week
+# other possibilities include calorie/macro counting and weight tracking.
+
+
+## If planning to combine 1051's final project with another course's final project, with which other course? And which aspect(s) of your proposed project would relate to 1051, and which aspect(s) would relate to the other course?
+
+# n/a
+
+## If planning to collaborate with 1 or 2 classmates for the final project, list their names, email addresses, and the names of their assigned TAs below.
+
+# Danny Marshall, tun93490@temple.eduTA Elmira Talebianaraki
+# Jessie Lam, amir.aghdam@temple.edu, Amir Baghghadam
+# Jaydin Farro, tuq74011@temple.edu  TA Yang Zhao
+
+## In the world of software, most everything takes longer to implement than you expect. And so it's not uncommon to accomplish less in a fixed amount of time than you hope.
+### In a sentence (or list of features), define a GOOD outcome for your final project. I.e., what WILL you accomplish no matter what?
+
+# a GOOD outcome for this final project is an app that allows users to pick from a variety of exercise routines and track their workouts by inputting the weight, reps, sets, and effort level for each exercise.
+
+### In a sentence (or list of features), define a BETTER outcome for your final project. I.e., what do you THINK you can accomplish before the final project's deadline?
+
+# a BETTER outcome would be if the app could make adjustments week-to-week based on prior performances by prompting the user to add or decrease weight when necessary.
+
+### In a sentence (or list of features), define a BEST outcome for your final project. I.e., what do you HOPE to accomplish before the final project's deadline?
+
+# the BEST outcome for this project is a comprehensive app where the user must create an account and input their fitness goals/preferences. 
+# The app should be able to recommend appropriate fitness routines and progression schemes. Ideally after creating an account the user would be given a questionnaire to determine what those goals are.
+# The user can track their workouts in real time and the app should keep track of workout data week to week, compiling it into a chart that users can see to understand how their progress is going.
+# Ideally the app would also have an option for calorie and macro/protein counting as well as weight tracking. The app should adjust the daily target calorie number based on how weight progression is going. 
