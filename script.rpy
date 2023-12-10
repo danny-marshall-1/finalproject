@@ -13,8 +13,10 @@ default Score = 0
 
 label start:
 
+    scene bedroom
     "I had been busy doing homework and studying all day, but it was time to take a break and go to the gym."
     "I hadn't worked out in a while because I was so busy. I knew it would be good for me, both physically and mentally."
+    scene door
     "I changed, grabbed my gym bag and car keys, and was about to head out the door when I realized I forgot to take my pre-workout."
     "Me" "I should probably go back and take my pre-workout...but sometimes it does have side effects!"
     menu:
@@ -27,18 +29,24 @@ label start:
 
 label pre:
 
+    scene kitchen
     "I went back to the kitchen and took my pre-workout."
     "Me" "Okay, it's time to go!"
+    scene driving
     "I drove to the gym."
+    scene gym
     "Once I got there, I checked my workout log to remind myself which workout I was scheduled for today."
     "Me" "Ugh...leg day? That's the hardest workout of the week...but I can do it."
+    scene squat
     "I saw an empty squat rack in the distance. I hurried towards it to make sure nobody would claim it before me."
     "I checked my log again. The last time I did squats, I did three sets of five reps with 235 pounds."
     "Me" "That's pretty good! Let's see how I'm feeling after warming up and hopefully I'll be able to beat that today."
+    scene squatting
     "I did three warm up sets."
     "Me" "Wow, my warm ups felt really good! I think I'm going to do 245 pounds today and hopefully I'll get around five reps."
     "As I got under the bar, the weight felt noticeably heavy over my shoulders. But I managed to crank out five reps."
     "Me" "That set was hard, but I did it! I'm not sure I'll be able to get five reps on my next two sets though. Realistically I should lower the weight back to 235."
+    scene girlsquatting
     "Suddenly, I noticed my gym crush warming up in the rack next to mine!"
     "I see her here so often, yet I've never had the courage to say anything to her or even make eye contact."
     "Me" "Maybe I'll try to impress her... Should I add weight and go for a PR? Or should I play it safe and stick to my original plan?"
@@ -54,14 +62,22 @@ label pre:
 label no_pre:
 
     "Me" "Okay, looks like I'm good to go!"
+    scene driving
     "I drove to the gym."
+    scene gym
     "Once I got there, I checked my workout log to remind myself which workout I was scheduled for today."
     "Me" "Ugh...leg day? That's the hardest workout of the week...but I can do it."
+    scene squat
     "I saw an empty squat rack in the distance. I hurried towards it to make sure nobody would claim it before me."
     "I checked my log again. The last time I did squats, I did three sets of five reps with 235 pounds."
     "Me" "That's pretty good! Let's see how I'm feeling after warming up and hopefully I'll be able to beat that today."
+    scene squatting
     "I did three warm up sets."
     "Me" "Ehhhh...those warm up sets didn't feel amazing. I could do 235 and try to just do what I did last time, or I could add weight like I was planning on doing."
+    scene girlsquatting
+    "Suddenly, I noticed my gym crush warming up in the rack next to mine!"
+    "I see her here so often, yet I've never had the courage to say anything to her or even make eye contact."
+    "Me" "Now that she's here, I feel like I should go as heavy as I can! But I might be risking it..."
     menu: 
         "Go for 245":
             jump forty_five
@@ -71,6 +87,7 @@ label no_pre:
 
 label forty_five:
 
+    scene squatting
     "I loaded 245 onto the bar. As I got under the bar and walked it out, I could feel how heavy it felt on my shoulders, which made me nervous."
     "I braced and began the set. The first rep moved a bit slower than I hoped. The second, third, and fourth reps were a mounting struggle."
     menu:
@@ -82,11 +99,13 @@ label forty_five:
 
 label thirty_five:
     
+    scene squatting
     "I decided to play it safe and do 235 like last time. I loaded up the bar, and as I got under and walked it out, it felt heavy on my shoulders, but definitely bearable."
     "I braced and began the set. The first rep moved pretty easily. I managed to do all five reps without any serious struggle."
     "Me" "That was a great set!"
     "I rested a few minutes and then did a couple more sets."
     "Me" "All right, 235 for three sets of five. I'll take it!"
+    scene girlonphone
     "I glanced over at my crush. She was on her phone, headphones in, not paying much attention to me."
     "Hmmm...should I finally go talk to her? I'm nervous..."
     menu: 
@@ -103,6 +122,7 @@ label fifth:
     "I began to descend into the squat. As soon as I reached the proper depth, I exploded up with all my might."
     "It wasn't enough. My legs simply didn't have the strength to lift the weight. I sank back down and allowed the bar to rest on the safety pins."
     "Me" "Argh! That's frustrating...I shouldn't have gone for the extra rep. Hopefully she didn't see..."
+    scene girlonphone
     "I glanced over in her direction. She didn't seem to be paying attention to me, luckily, as she was on her phone, headphones in."
     "I went over to my bench, sat down, and drank some water from my water bottle. Looking at the bar helplessly laying on the safety pins, I realized I wasn't really in the mood to hoist it back onto the hooks to do another set."
     "Me" "All right, I'm just gonna call it a day with squats. But I shouldn't waste the opportunity...maybe I should go say something to her while she's here!"
@@ -119,6 +139,7 @@ label no_fifth:
     "I walked the bar forward, let it come on to the hooks, and dropped it safely."
     "Me" "Phew! That was a tough set...probably good I didn't go for a fifth rep there, even if it means no PR."
     "At that point, I dropped the weight back to 235 and did two more sets."
+    scene girlonphone
     "When I was done, I went back to my bench and took some water from my watter bottle. I glanced over in her direction. She didn't seem to be paying attention to me, as she was on her phone, headphones in."
     "Me" "I shouldn't waste the opportunity...maybe I should go say something to her while she's here!"
     menu: 
@@ -133,6 +154,7 @@ label no_fifth:
 label PR:
 
     "Me" "Okay, I'm going for 275! I've never hit this weight before, but I'm feeling pretty good, so I think I can do it."
+    scene squatting
     "Unracking the bar, I immediately felt intimidated by the weight. But I sensed that she was watching, and adrenaline was pumping through my body. I took a deep breath, squatted down, and grinded the rep with all my might."
     "Me" "That was hard, but I did it! Do I go for one more?"
     menu:
@@ -150,8 +172,10 @@ label PR:
 label drop:
 
     "I decided not to let the girl I was trying to impress potentially get me injured. Better safe than sorry!"
+    scene squatting
     "I lowered the weight back to 235 and completed two more sets of five reps."
     "Me" "Awesome! Not a ridiculous PR, but still my best squat performance to date."
+    scene girlonphone
     "I glanced over at my crush. She was on her phone, headphones in, not paying much attention to me."
     "Hmmm...should I finally go talk to her? I'm nervous..."
     menu: 
@@ -168,6 +192,7 @@ label attempt_another:
     "I braced hard and began my descent. I could feel my quads and glutes stretching under the seemingly immense load."
     "As soon as I hit the proper depth, I exploded up once again, but this time, I could hardly move the weight! Sheer panic coursed through my body, but I remained determined to complete the rep."
     "Five whole seconds passed before I was standing up again. I shakily walked the bar back to the rack and let it drop onto the hooks. Exhausted, I clutched the railings of the rack, gasping for breath."
+    scene girlonphone
     "I turned around to see if she had been paying attention to my miraculous feat of strength. My heart deflated when I realized that she was on her phone, headphones in, totally not taking any notice of me."
     "Me" "Damn...all that for nothing? I practically sold my soul for that rep, and I'm so exhausted I don't know how I'm going to get through the rest of the workout!"
     "I sat down, drank some water from my water bottle, and allowed myself to come back to my senses for a few minutes."
@@ -184,6 +209,7 @@ label attempt_another:
 label approach_girl:
 
     "I took a deep breath, glanced in the mirror, fixed my hair, and walked towards her." 
+    scene talkingtogirl
     if rizz:
         "Me" "Hey there."
         "Girl" "Hey"
@@ -222,9 +248,9 @@ label approach_girl:
     return
 
 label leg_press:
-
     if rizz:
         if injured:
+            scene legpress
             "As I started loading plates onto the leg press, however, I noticed that my back was hurting...I probably exerted myself too much on those squats!"
             "Me" "Maybe I should do a few warm up sets..."
             menu:
@@ -235,6 +261,7 @@ label leg_press:
                     $ Score -= 30
                     jump no_warmup
         else:
+            scene doinglegpress
             "I don't usually warm up on the leg press, and I was feeling good, so I went ahead and did a set of ten with five plates on each side."
             "Me" "That was hard, but I feel good. I might be able to add weight on the next one."
             menu: 
@@ -244,6 +271,7 @@ label leg_press:
                     jump no_add
     else:
         if injured:
+            scene legpress
             "As I started loading plates onto the leg press, I noticed that my back was hurting...I probably exerted myself too much on those squats!"
             "Me" "Maybe I should do a few warm up sets..."
             menu:
@@ -254,6 +282,7 @@ label leg_press:
                     $ Score -= 30
                     jump no_warmup
         else:
+            scene doinglegpress
             "I loaded up the leg press with five plates on each side, slid into the seat, and did a set of ten."
             "Me" "That was hard, but I'm feeling surprisingly strong right now. I might be able to add weight on the next one."
             menu: 
@@ -264,8 +293,10 @@ label leg_press:
 
 label add:
 
+    scene legpress
     "I went ahead and added another plate on each side."
     "Me" "Six plates is a lot...hopefully I can handle it!"
+    scene doinglegpress
     "After resting a few minutes, I got back in the seat, unracked the weight, and gripped the handles. I took a deep breath and began the set."
     "4, 5...6!"
     "That sixth rep took everything I had. There was a slight chance I could go for another rep, but I knew if I went for it, I wouldn't have it in me to do a third set."
@@ -289,6 +320,7 @@ label one_more:
         "I looked around, and some people nearby were whispering and laughing under their breaths."
         "Ugh..."
         "I removed the plates, wiped the seat EXTRA thoroughly, and took my stuff over to the leg curl machine."
+        scene legcurl
         "Me" "Oh...it looks like someone is using the machine. I guess I could ask to work in with him, or I could just wait for him to finish."
         menu:
             "Ask to work in":
@@ -301,6 +333,7 @@ label one_more:
         "Determined to secure victory over the weights, I pushed up with everything I had. After what felt like eternity, I locked out, racked the weight, and took a sigh of relief."
         "Me" "Wow, that was hard! Seven reps with six plates though...that's a nice little PR."
         "I removed the plates, wiped the seat, and took my stuff over to the leg curl machine."
+        scene legcurl
         "Me" "Oh...it looks like someone is using the machine. I guess I could ask to work in with him, or I could just wait for him to finish."
         menu:
             "Ask to work in":
@@ -312,6 +345,7 @@ label end_set_here:
 
     "I racked the weight and took a sigh of relief. That last rep would have been hell for sure!"
     "I rested another minute and did one more set. Then I went over to the leg curl machine to finish the workout."
+    scene legcurl
     "Me" "Oh...it looks like someone is using the machine. I guess I could ask to work in with him, or I could just wait for him to finish."
     menu:
         "Ask to work in":
@@ -323,6 +357,7 @@ label end_set_here:
 label no_add:
 
     "I did two more sets with plates. Then I went over to the leg curl machine to finish the workout."
+    scene legcurl
     "Me" "Oh...it looks like someone is using the machine. I guess I could ask to work in with him, or I could just wait for him to finish."
     menu:
         "Ask to work in":
@@ -369,6 +404,7 @@ label keep_going:
 
 label leave_with_girl:
 
+    scene injured
     "I crawled out of the machine in agony. I threw out my back for sure!"
     "I looked around the gym in panic, hoping I hadn't caused a scene. A few people looked my way, but I didn't see her anywhere...phew!"
     "Then all of a sudden she appeared out of nowhere."
@@ -378,6 +414,7 @@ label leave_with_girl:
     "Jane" "I'm so sorry. You really do train hard, don't you? I saw your squats earlier. Very impressive, but maybe you shouldn't go so hard all the time or you'll get injured!"
     "Me" "You're right. To be honest, I was actually just trying to impress you..."
     "Jane" "That's silly. I was already impressed. Here, let's get you back to your car."
+    scene gym
     "She helped me back to my car. I was limping a little, and my back was stiff, but I knew it could've been worse."
     "Me" "Thanks so much for your help. You really didn't have to."
     "Jane" "Don't mention it. Text me when you get home, and make sure to take painkillers."
@@ -387,6 +424,7 @@ label leave_with_girl:
 
 label leave_alone:
 
+    scene injured
     "I crawled out of the machine in agony. I threw out my back for sure!"
     "I looked around the gym in panic, hoping I hadn't caused a scene. A few people looked my way, but I didn't see her anywhere...phew!"
     "I got up, took off the plates, wiped off the seat, and hobbled over to the exit. I was done with this workout."
@@ -398,6 +436,7 @@ label stop_set:
 
     "I knew it would be unwise to keep going. I racked the weight and got out of the machine."
     "My back was still hurting, but it wasn't too bad. I went over to the leg curl machine to finish the workout."
+    scene legcurl
     "Me" "Oh...it looks like someone is using the machine. I guess I could ask to work in with him, or I could just wait for him to finish."
     menu:
         "Ask to work in":
@@ -427,6 +466,7 @@ label work_in:
     return
 
 label conversation:
+    scene conversation
     "Me" "What's your name?"
     "Guy" "Joe."
     "Me" "Cool. I'm Brad."
@@ -445,6 +485,7 @@ label no_talk:
 label wait:
 
     "I went to the nearest bench to sit down while I waited." 
+    scene friend
     "Then, I noticed my friend was nearby on the cable machines! Should I go approach him?"
     menu:
         "Approach friend":
@@ -457,6 +498,7 @@ label wait:
 
 label approach_friend:
 
+    scene conversation
     "Me" "Hey man!"
     "Friend" "What's up bro! What you hitting today?"
     "Me" "Oh you know, just dragging myself through the annual leg day!"
@@ -468,6 +510,8 @@ label approach_friend:
     return
 
 label no_approach_friend:
+
+    scene legcurl
     "I decided to leave him be. Once the leg curl machine was empty, hopped on, did my sets, and left the gym."
     jump score
     return
@@ -476,6 +520,7 @@ label skip:
 
     "I decided to play it safe and not do any working sets on the leg press. My back was simply not agreeing with me!"
     "I went over to the leg curl machine, which I knew would be easy on my back."
+    scene legcurl
     "Oh...it looks like someone is using the machine. I guess I could ask to work in with him, or I could just wait for him to finish."
     menu:
         "Ask to work in":
@@ -506,6 +551,7 @@ label end_set:
 
     "I made a business decision and called it there. I took a deep breath and carefully walked the bar back to the rack."
     "Me" "I think I had another rep in me! But maybe it's good I didn't go for it. Who knows what would've happened!"
+    scene girlonphone
     "I turned around to see if she had been paying attention to my impressive lift. My heart deflated when I realized that she was on her phone, headphones in, totally not taking any notice of me."
     "Me" "Damn...all that for nothing? Well, I guess I'm glad I didn't try for that extra rep!"
     "I sat down, drank some water from my water bottle, and allowed myself to come back to my senses for a few minutes."
@@ -521,6 +567,7 @@ label end_set:
 
 
 label score:
+    scene drivinghome
     "The End!"
     if Score == 90:
         "Congratulations! Your score is 90/90"
