@@ -1,4 +1,4 @@
-﻿default rizz = False
+default rizz = False
 default took_pre = False
 default injured = False
 default seriously_injured = False
@@ -248,6 +248,7 @@ label approach_girl:
     return
 
 label leg_press:
+
     if rizz:
         if injured:
             scene legpress
@@ -368,6 +369,7 @@ label no_add:
 
 label warmup:
 
+    scene doinglegpress
     "I took some plates off and did a few sets with light weight. My back felt tight, but after the huge squat PR, I really wanted to see what I could do on the leg press!"
     menu:
         "Proceed to working sets":
@@ -533,6 +535,7 @@ label no_warmup:
 
     "I decided to go straight into my working weight. Shouldn't be a problem, since I don't usually need any warm up sets"
     "I put five plates on the machine - my previous best with that weight was ten reps. Let's see how many I can go for today!"
+    scene doinglegpress
     "I aligned my feet on the platform, unracked the weight, and began the slow, painful descent. I went as far down as I could, paused, and began pressing back up."
     "Halfway through the rep, I felt something in my back that I've never felt before. I stopped pushing, and the weight came crashing down to the safety stopper with a bang."
     if rizz:
